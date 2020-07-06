@@ -41,7 +41,7 @@ export const Form: React.FC<FormProps> = props => {
     algorithm = 'sha256',
     expiresAt = '',
     debug = false,
-    className = 'e2-form'
+    className = 'e2-form',
   } = props
 
   const gateway = 'https://payment.paytrail.com/e2'
@@ -66,7 +66,7 @@ export const Form: React.FC<FormProps> = props => {
     .addMessages(messages)
     .addParams()
 
-  const fieldEntries = [...fields.entries()]
+  const fieldEntries = Array.from(fields.entries())
 
   return (
     <div>

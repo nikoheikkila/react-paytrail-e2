@@ -84,7 +84,7 @@ class FieldMap extends Map {
     const outParameters = ['ORDER_NUMBER', 'PAYMENT_ID', 'AMOUNT', 'CURRENCY', 'PAYMENT_METHOD', 'TIMESTAMP', 'STATUS']
     this.add('PARAMS_OUT', outParameters.join(','))
 
-    const inParameters = [...this.keys()]
+    const inParameters = Array.from(this.keys())
     return this.add('PARAMS_IN', inParameters.join(','))
   }
 
@@ -96,7 +96,7 @@ class FieldMap extends Map {
    * @returns AUTHCODE converted to uppercase.
    */
   authCode(secret: string, algorithm: string): string {
-    const values = [secret, ...this.values()].join('|')
+    const values = [secret].concat(Array.from(this.values())).join('|')
 
     return shajs(algorithm).update(values).digest('hex').toUpperCase()
   }

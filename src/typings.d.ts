@@ -33,7 +33,6 @@ interface DebugProps {
 }
 
 interface FormProps {
-  className: string
   merchant: Merchant
   orderNumber: string
   urls: URLSet
@@ -48,6 +47,7 @@ interface FormProps {
   algorithm?: 'sha256'
   messages?: MessageSet
   expiresAt?: string
+  className?: string
 }
 
 interface Merchant {

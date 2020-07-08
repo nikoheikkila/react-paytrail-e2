@@ -47,13 +47,14 @@ test('Form renders with all the fields', async () => {
     secret: '123',
   }
 
+  const className = 'e2-test-form'
   const orderNumber = '1'
   const paymentMethods = [1, 2]
   const reference = 'RF123456789'
   const currency = 'EUR'
   const locale = 'fi_FI'
   const algorithm = 'sha256'
-  const includeVat = true
+  const includeVat = false
 
   const expiresAt = '2021-01-01'
   const urls = getURLs('https://example.com')
@@ -90,6 +91,8 @@ test('Form renders with all the fields', async () => {
 
   const { container } = render(
     <Form
+      className={className}
+      debug
       merchant={merchant}
       orderNumber={orderNumber}
       urls={urls}
@@ -106,15 +109,19 @@ test('Form renders with all the fields', async () => {
     />,
   )
 
+  const expectedInputFields = 34
+  const expectedDebugFields = expectedInputFields - 1 // AUTHCODE is not shown in debug
+
   expect(container).toMatchSnapshot()
-  expect(container.querySelectorAll('input')).toHaveLength(34)
+  expect(container.querySelectorAll('input')).toHaveLength(expectedInputFields)
+  expect(container.querySelectorAll('ul > li')).toHaveLength(expectedDebugFields)
   expect(container.querySelector('input[name=MERCHANT_ID')).toHaveProperty('value', merchant.id)
   expect(container.querySelector('input[name=ORDER_NUMBER')).toHaveProperty('value', orderNumber)
   expect(container.querySelector('input[name=PAYMENT_METHODS')).toHaveProperty('value', '1,2')
   expect(container.querySelector('input[name=REFERENCE_NUMBER')).toHaveProperty('value', reference)
   expect(container.querySelector('input[name=CURRENCY')).toHaveProperty('value', currency)
   expect(container.querySelector('input[name=LOCALE')).toHaveProperty('value', locale)
-  expect(container.querySelector('input[name=VAT_IS_INCLUDED')).toHaveProperty('value', '1')
+  expect(container.querySelector('input[name=VAT_IS_INCLUDED')).toHaveProperty('value', '0')
   expect(container.querySelector('input[name=EXPIRATION_FOR_PAYMENT_CREATION')).toHaveProperty('value', expiresAt)
   expect(container.querySelector('input[name=URL_SUCCESS')).toHaveProperty('value', urls.success.href)
   expect(container.querySelector('input[name=URL_CANCEL')).toHaveProperty('value', urls.cancel.href)

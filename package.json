@@ -18,7 +18,7 @@
     "test": "run-s test:ci test:lint test:build",
     "test:build": "run-s build",
     "test:lint": "eslint .",
-    "test:ci": "cross-env CI=1 react-scripts test -u --env=jsdom",
+    "test:ci": "cross-env CI=1 react-scripts test -u --env=jsdom --coverage --watchAll=false",
     "test:unit": "react-scripts test --env=jsdom",
     "test:watch": "react-scripts test --env=jsdom",
     "predeploy": "cd example && yarn install && yarn run build",
@@ -61,5 +61,24 @@
     "@babel/plugin-syntax-object-rest-spread": "^7.8.3",
     "@types/sha.js": "^2.4.0",
     "sha.js": "^2.4.11"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "**/*.{js,jsx,ts,tsx}",
+      "!**/node_modules/**",
+      "!**/*.d.ts"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": 90
+      }
+    },
+    "coverageReporters": [
+      "text-summary",
+      "html"
+    ]
   }
 }

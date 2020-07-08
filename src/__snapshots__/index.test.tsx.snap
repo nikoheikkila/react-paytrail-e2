@@ -3,9 +3,341 @@
 exports[`Form renders with all the fields 1`] = `
 <div>
   <div>
+    <ul>
+      <li>
+        <strong>
+          MERCHANT_ID
+          :
+        </strong>
+        <br />
+        <code>
+           1
+        </code>
+      </li>
+      <li>
+        <strong>
+          ORDER_NUMBER
+          :
+        </strong>
+        <br />
+        <code>
+           1
+        </code>
+      </li>
+      <li>
+        <strong>
+          PARAMS_IN
+          :
+        </strong>
+        <br />
+        <code>
+           MERCHANT_ID,ORDER_NUMBER,PARAMS_IN,LOCALE,CURRENCY,REFERENCE_NUMBER,EXPIRATION_FOR_PAYMENT_CREATION,PAYMENT_METHODS,VAT_IS_INCLUDED,ALG,URL_SUCCESS,URL_CANCEL,URL_NOTIFY,ITEM_TITLE[0],ITEM_ID[0],ITEM_QUANTITY[0],ITEM_UNIT_PRICE[0],ITEM_VAT_PERCENT[0],ITEM_DISCOUNT_PERCENT[0],ITEM_TYPE[0],PAYER_PERSON_PHONE,PAYER_PERSON_EMAIL,PAYER_PERSON_FIRSTNAME,PAYER_PERSON_LASTNAME,PAYER_COMPANY_NAME,PAYER_PERSON_ADDR_STREET,PAYER_PERSON_ADDR_POSTAL_CODE,PAYER_PERSON_ADDR_TOWN,PAYER_PERSON_ADDR_COUNTRY,MSG_UI_MERCHANT_PANEL,MSG_SETTLEMENT_PAYER,MSG_UI_PAYMENT_METHOD,PARAMS_OUT
+        </code>
+      </li>
+      <li>
+        <strong>
+          LOCALE
+          :
+        </strong>
+        <br />
+        <code>
+           fi_FI
+        </code>
+      </li>
+      <li>
+        <strong>
+          CURRENCY
+          :
+        </strong>
+        <br />
+        <code>
+           EUR
+        </code>
+      </li>
+      <li>
+        <strong>
+          REFERENCE_NUMBER
+          :
+        </strong>
+        <br />
+        <code>
+           RF123456789
+        </code>
+      </li>
+      <li>
+        <strong>
+          EXPIRATION_FOR_PAYMENT_CREATION
+          :
+        </strong>
+        <br />
+        <code>
+           2021-01-01
+        </code>
+      </li>
+      <li>
+        <strong>
+          PAYMENT_METHODS
+          :
+        </strong>
+        <br />
+        <code>
+           1,2
+        </code>
+      </li>
+      <li>
+        <strong>
+          VAT_IS_INCLUDED
+          :
+        </strong>
+        <br />
+        <code>
+           0
+        </code>
+      </li>
+      <li>
+        <strong>
+          ALG
+          :
+        </strong>
+        <br />
+        <code>
+           1
+        </code>
+      </li>
+      <li>
+        <strong>
+          URL_SUCCESS
+          :
+        </strong>
+        <br />
+        <code>
+           https://example.com/success
+        </code>
+      </li>
+      <li>
+        <strong>
+          URL_CANCEL
+          :
+        </strong>
+        <br />
+        <code>
+           https://example.com/cancel
+        </code>
+      </li>
+      <li>
+        <strong>
+          URL_NOTIFY
+          :
+        </strong>
+        <br />
+        <code>
+           https://example.com/notify
+        </code>
+      </li>
+      <li>
+        <strong>
+          ITEM_TITLE[0]
+          :
+        </strong>
+        <br />
+        <code>
+           Test Product
+        </code>
+      </li>
+      <li>
+        <strong>
+          ITEM_ID[0]
+          :
+        </strong>
+        <br />
+        <code>
+           123
+        </code>
+      </li>
+      <li>
+        <strong>
+          ITEM_QUANTITY[0]
+          :
+        </strong>
+        <br />
+        <code>
+           1
+        </code>
+      </li>
+      <li>
+        <strong>
+          ITEM_UNIT_PRICE[0]
+          :
+        </strong>
+        <br />
+        <code>
+           100.00
+        </code>
+      </li>
+      <li>
+        <strong>
+          ITEM_VAT_PERCENT[0]
+          :
+        </strong>
+        <br />
+        <code>
+           24
+        </code>
+      </li>
+      <li>
+        <strong>
+          ITEM_DISCOUNT_PERCENT[0]
+          :
+        </strong>
+        <br />
+        <code>
+           10
+        </code>
+      </li>
+      <li>
+        <strong>
+          ITEM_TYPE[0]
+          :
+        </strong>
+        <br />
+        <code>
+           1
+        </code>
+      </li>
+      <li>
+        <strong>
+          PAYER_PERSON_PHONE
+          :
+        </strong>
+        <br />
+        <code>
+           040123456
+        </code>
+      </li>
+      <li>
+        <strong>
+          PAYER_PERSON_EMAIL
+          :
+        </strong>
+        <br />
+        <code>
+           alice@example.org
+        </code>
+      </li>
+      <li>
+        <strong>
+          PAYER_PERSON_FIRSTNAME
+          :
+        </strong>
+        <br />
+        <code>
+           Alice
+        </code>
+      </li>
+      <li>
+        <strong>
+          PAYER_PERSON_LASTNAME
+          :
+        </strong>
+        <br />
+        <code>
+           Angel
+        </code>
+      </li>
+      <li>
+        <strong>
+          PAYER_COMPANY_NAME
+          :
+        </strong>
+        <br />
+        <code>
+           Acme Ltd
+        </code>
+      </li>
+      <li>
+        <strong>
+          PAYER_PERSON_ADDR_STREET
+          :
+        </strong>
+        <br />
+        <code>
+           Test Street 1
+        </code>
+      </li>
+      <li>
+        <strong>
+          PAYER_PERSON_ADDR_POSTAL_CODE
+          :
+        </strong>
+        <br />
+        <code>
+           00100
+        </code>
+      </li>
+      <li>
+        <strong>
+          PAYER_PERSON_ADDR_TOWN
+          :
+        </strong>
+        <br />
+        <code>
+           Helsinki
+        </code>
+      </li>
+      <li>
+        <strong>
+          PAYER_PERSON_ADDR_COUNTRY
+          :
+        </strong>
+        <br />
+        <code>
+           FI
+        </code>
+      </li>
+      <li>
+        <strong>
+          MSG_UI_MERCHANT_PANEL
+          :
+        </strong>
+        <br />
+        <code>
+           This is a message for the Merchant's Panel
+        </code>
+      </li>
+      <li>
+        <strong>
+          MSG_SETTLEMENT_PAYER
+          :
+        </strong>
+        <br />
+        <code>
+           This is a message for the customer
+        </code>
+      </li>
+      <li>
+        <strong>
+          MSG_UI_PAYMENT_METHOD
+          :
+        </strong>
+        <br />
+        <code>
+           This is a message for the payment method
+        </code>
+      </li>
+      <li>
+        <strong>
+          PARAMS_OUT
+          :
+        </strong>
+        <br />
+        <code>
+           ORDER_NUMBER,PAYMENT_ID,AMOUNT,CURRENCY,PAYMENT_METHOD,TIMESTAMP,STATUS
+        </code>
+      </li>
+    </ul>
     <form
       action="https://payment.paytrail.com/e2"
-      class="e2-form"
+      class="e2-test-form"
       method="post"
     >
       <input
@@ -51,7 +383,7 @@ exports[`Form renders with all the fields 1`] = `
       <input
         name="VAT_IS_INCLUDED"
         type="hidden"
-        value="1"
+        value="0"
       />
       <input
         name="ALG"
@@ -176,7 +508,7 @@ exports[`Form renders with all the fields 1`] = `
       <input
         name="AUTHCODE"
         type="hidden"
-        value="24442E884055706A8954DB39EEE246EBD01C92CB4205A1A18CD88A32887389A6"
+        value="CA8A6BCB3A31EEB4114A6DE1A5DE8D48F7D33D3E0C081310E63CAB5A8E9E4CA1"
       />
       <button
         type="submit"

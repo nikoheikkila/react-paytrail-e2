@@ -3,11 +3,11 @@
 [![npm version](https://badge.fury.io/js/react-paytrail-e2.svg)](https://badge.fury.io/js/react-paytrail-e2)
 ![NPM](https://img.shields.io/npm/l/react-paytrail-e2?style=flat-square)
 
-> React library and component for creating payments with [Paytrail E2 Interface][e2].
+> :exclamation: 3rd party developed React library and component for creating payments with [Paytrail E2 Interface][e2].
 
 ## Introduction
 
-![Screenshot](screenshot.png)
+![Screenshot](screenshot.png "Screenshot from component")
 
 This library outputs a new `<form>` HTML element including all the required and optional fields as `<input>` elements for the E2 interface. Authcode required by Paytrail is calculated dynamically on render.
 

@@ -42,6 +42,7 @@ export const Form: React.FC<FormProps> = props => {
     expiresAt = '',
     debug = false,
     className = 'e2-form',
+    btnText = 'Pay',
   } = props
 
   const gateway = 'https://payment.paytrail.com/e2'
@@ -76,7 +77,7 @@ export const Form: React.FC<FormProps> = props => {
           <input key={index} name={key} type='hidden' value={value} />
         ))}
         <input name='AUTHCODE' type='hidden' value={fields.authCode(merchant.secret, algorithm)} />
-        <button type='submit'>Pay</button>
+        <button type='submit'>{btnText}</button>
       </form>
     </div>
   )

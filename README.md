@@ -3,6 +3,8 @@
 [![npm version](https://badge.fury.io/js/react-paytrail-e2.svg)](https://badge.fury.io/js/react-paytrail-e2)
 ![NPM](https://img.shields.io/npm/l/react-paytrail-e2?style=flat-square)
 
+> :exclamation: DEPRECATED! This package is no longer under developement or updating, and you should NOT use it.
+> 
 > :exclamation: 3rd party developed React library and component for creating payments with [Paytrail E2 Interface][e2].
 
 ## Introduction
